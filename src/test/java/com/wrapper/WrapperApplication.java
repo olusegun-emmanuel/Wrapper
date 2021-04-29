@@ -1,10 +1,10 @@
-package com.admission.info;
+package com.wrapper;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class AdmissionApplicationTests {
+class WrapperApplication {
 
 	@Test
 	void contextLoads() {

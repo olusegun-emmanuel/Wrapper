@@ -17,14 +17,14 @@ public class CustomerWrapperController {
 	@RequestMapping("/customerinfo")
 	//This method gets the customer info from CustomerInfo microservice
 	public CustomerInfoList getCustomerInfo()	{
-		CustomerInfoList customerInfoList = restTemplate.getForObject("http://customer-info/info/customer", CustomerInfoList.class);
+		CustomerInfoList customerInfoList = restTemplate.getForObject("http://localhost:8082/customer-info/info/customer", CustomerInfoList.class);
 		return customerInfoList;
 	}
 
 	@RequestMapping("/customeraddr")
 	//This method gets the customer address from CustomerAddress microservice
 	public CustomerAddrList getCustomerAddrlist()	{
-		CustomerAddrList customerAddrList =  restTemplate.getForObject("http://customer-address/custaddr/address", CustomerAddrList.class);
+		CustomerAddrList customerAddrList =  restTemplate.getForObject("http://localhost:8082/customer-address/custaddr/address", CustomerAddrList.class);
 		return customerAddrList;
 	}
 	
